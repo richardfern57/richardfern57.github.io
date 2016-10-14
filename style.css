@@ -63,15 +63,17 @@ div.topbar h3 {
 
 
 div.sidebar {
+	text-align: center;
 	background: var(--bglass);
 	color: var(--bfont);
 	margin-top: var(--topmarg);
 	top: 0;
 	right: 0;
 	z-index: 1;
+	padding-top: 40px;
 	position: fixed;
 	height: 100%;
-	padding: 40px;
+	width: 20%;
 }
 
 div.sidebar a:link {
@@ -115,7 +117,9 @@ div.header a:hover {
 div.section {
 	background: linear-gradient(to right, var(--bground),var(--bglass));
 	color: var(--bfont);
-	margin: 0px var(--sidemarg) 40px 0px;
+	left: 0;
+	margin-right: 20%;
+	margin-bottom: 50px;
 	padding: 50px;
 }
 
