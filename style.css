@@ -1,8 +1,10 @@
 :root {
 	--bfont: rgba(255,255,255,1);
 	--bground: rgba(0,33,71,1);
-	--bglass: rgba(0,33,71,0.9);
+	--bglass: rgba(25,55,89,1);
 	--emph: rgba(127,144,163,1);
+	--topmarg: 52px;
+	--sidemarg: 161px;
 }
 
 body {
@@ -16,9 +18,22 @@ p {
 	margin: 20px;
 }
 
+table {
+	width: 100%;
+	border-bottom: 1px solid;
+	border-color: var(--emph);
+	border-collapse: collapse;
+}
+
+th, td {
+	border-bottom: 1px solid;
+	border-color: var(--emph);
+	border-collapse: collapse;
+	padding: 10px;
+}
 
 
-div.nav {
+div.topbar {
 	background: linear-gradient(var(--bground),var(--bglass));
 	color: var(--bfont);
 	position: fixed;
@@ -28,29 +43,57 @@ div.nav {
 	width: 100%;
 }
 
-div.nav a:link {
+div.topbar a:link {
 	color: var(--bfont);
 	text-decoration: none;
 }
 
-div.nav a:visited {
+div.topbar a:visited {
 	color: var(--bfont);
 }
 
-div.nav a:hover {
+div.topbar a:hover {
 	color: var(--emph);
 }
 
-div.nav h3{
+div.topbar h3 {
 	margin: 5px;
 }
 
 
 
+div.sidebar {
+	background: var(--bglass);
+	color: var(--bfont);
+	margin-top: var(--topmarg);
+	top: 0;
+	right: 0;
+	z-index: 1;
+	position: fixed;
+	height: 100%;
+	padding: 40px;
+}
+
+div.sidebar a:link {
+	color: var(--bfont);
+	text-decoration: none;
+}
+
+div.sidebar a:visited {
+	color: var(--bfont);
+}
+
+div.sidebar a:hover {
+	color: var(--emph);
+}
+
+
+
 div.header {
+	overflow: auto;
 	background: var(--bfont);
 	color: var(--bground);
-	margin: 30px 30px 20px 30px;
+	margin: var(--topmarg) var(--sidemarg) 30px 30px;
 	padding: 30px;
 }
 
@@ -70,9 +113,9 @@ div.header a:hover {
 
 
 div.section {
-	background: var(--bground);
+	background: linear-gradient(to right, var(--bground),var(--bglass));
 	color: var(--bfont);
-	margin: 0px 0px 40px 0px;
+	margin: 0px var(--sidemarg) 40px 0px;
 	padding: 50px;
 }
 
