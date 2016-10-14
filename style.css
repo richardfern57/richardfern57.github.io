@@ -1,0 +1,98 @@
+:root {
+	--bfont: rgba(255,255,255,1);
+	--bground: rgba(0,33,71,1);
+	--bglass: rgba(0,33,71,0.9);
+	--emph: rgba(127,144,163,1);
+}
+
+body {
+	background-color: var(--bfont);
+	font-family: ubuntu;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 20px;
+}
+
+
+
+div.nav {
+	background: linear-gradient(var(--bground),var(--bglass));
+	color: var(--bfont);
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	width: 100%;
+}
+
+div.nav a:link {
+	color: var(--bfont);
+	text-decoration: none;
+}
+
+div.nav a:visited {
+	color: var(--bfont);
+}
+
+div.nav a:hover {
+	color: var(--emph);
+}
+
+div.nav h3{
+	margin: 5px;
+}
+
+
+
+div.header {
+	background: var(--bfont);
+	color: var(--bground);
+	margin: 30px 30px 20px 30px;
+	padding: 30px;
+}
+
+div.header a:link {
+	color: var(--bground);
+	text-decoration: none;
+}
+
+div.header a:visited {
+	color: var(--bground);
+}
+
+div.header a:hover {
+	color: var(--emph);
+}
+
+
+
+div.section {
+	background: var(--bground);
+	color: var(--bfont);
+	margin: 0px 0px 40px 0px;
+	padding: 50px;
+}
+
+div.section a:link {
+	color: var(--bfont);
+	text-decoration: none;
+}
+
+div.section a:visited {
+	color: var(--bfont);
+}
+
+div.section a:hover {
+	color: var(--emph);
+}
+
+div.section h2 {
+	margin: 5px;
+}
+
+div.section h3 {
+	margin: 5px;
+}
