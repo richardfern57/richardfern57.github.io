@@ -1,7 +1,7 @@
 :root {
 	--bfont: rgba(255,255,255,1);
 	--bground: rgba(0,33,71,1);
-	--bglass: rgba(25,55,89,1);
+	--bglass: rgba(0,33,71,0.9);
 	--emph: rgba(127,144,163,1);
 	--topmarg: 52px;
 	--sidemarg: 161px;
@@ -39,55 +39,68 @@ div.topbar {
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding: 10px;
+	padding: 20px;
 	width: 100%;
 }
+
+
 
 div.topbar a:link {
 	color: var(--bfont);
 	text-decoration: none;
 }
-
 div.topbar a:visited {
 	color: var(--bfont);
 }
-
 div.topbar a:hover {
-	color: var(--emph);
 }
 
+
+
+div.topbar a.other:link {
+	margin: 20px;
+	color: var(--bfont);
+	text-decoration: none;
+}
+div.topbar a.other:visited {
+	color: var(--bfont);
+}
+div.topbar a.other:hover {
+	margin: 15px;
+	background-color: var(--emph);
+	border-radius: 15px;
+	padding: 5px;
+}
+
+
+
+div.topbar a.current:link {
+	margin: 15px;
+	border-radius: 15px;
+	padding: 5px;
+	background-color: var(--emph);
+	color: var(--bfont);
+	text-decoration: none;
+}
+div.topbar a.current:visited {
+	color: var(--bfont);
+}
+div.topbar a.current:hover {
+}
+
+
+
+div.topbar h2 {
+	display: inline;
+	margin: 0px 40px 0px 20px;
+}
 div.topbar h3 {
+	display: inline;
 	margin: 5px;
 }
 
 
 
-div.sidebar {
-	text-align: center;
-	background: var(--bglass);
-	color: var(--bfont);
-	margin-top: var(--topmarg);
-	top: 0;
-	right: 0;
-	z-index: 1;
-	padding-top: 40px;
-	position: fixed;
-	height: 100%;
-	width: 20%;
-}
-
-div.sidebar a:link {
-	color: var(--bfont);
-	text-decoration: none;
-}
-
-div.sidebar a:visited {
-	color: var(--bfont);
-}
-
-div.sidebar a:hover {
-	color: var(--emph);
-}
 
 
 
@@ -95,19 +108,17 @@ div.header {
 	overflow: auto;
 	background: var(--bfont);
 	color: var(--bground);
-	margin: var(--topmarg) var(--sidemarg) 30px 30px;
+	width: 500px;
+	margin: 60px auto;
 	padding: 30px;
 }
-
 div.header a:link {
 	color: var(--bground);
 	text-decoration: none;
 }
-
 div.header a:visited {
 	color: var(--bground);
 }
-
 div.header a:hover {
 	color: var(--emph);
 }
@@ -115,11 +126,10 @@ div.header a:hover {
 
 
 div.section {
-	background: linear-gradient(to right, var(--bground),var(--bglass));
+	background: var(--bground);
 	color: var(--bfont);
-	left: 0;
-	margin-right: 20%;
-	margin-bottom: 50px;
+	width: 500px;
+	margin: 50px auto;
 	padding: 50px;
 }
 
