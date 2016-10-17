@@ -3,8 +3,7 @@
 	--bground: rgba(0,33,71,1);
 	--bglass: rgba(0,33,71,0.9);
 	--emph: rgba(127,144,163,1);
-	--topmarg: 52px;
-	--sidemarg: 161px;
+	--shad: orange;
 }
 
 body {
@@ -19,6 +18,7 @@ p {
 }
 
 table {
+	text-align: center;
 	width: 100%;
 	border-bottom: 1px solid;
 	border-color: var(--emph);
@@ -39,7 +39,7 @@ div.topbar {
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding: 20px;
+	padding: 30px;
 	width: 100%;
 }
 
@@ -108,8 +108,9 @@ div.header {
 	overflow: auto;
 	background: var(--bfont);
 	color: var(--bground);
-	width: 500px;
-	margin: 60px auto;
+	width: 600px;
+	margin: 70px auto;
+	margin-bottom: -20px;
 	padding: 30px;
 }
 div.header a:link {
@@ -126,11 +127,12 @@ div.header a:hover {
 
 
 div.section {
-	background: var(--bground);
+	background: var(--bglass);
 	color: var(--bfont);
 	width: 500px;
 	margin: 50px auto;
 	padding: 50px;
+	box-shadow: -5px 5px var(--emph);
 }
 
 div.section a:link {
