@@ -32,6 +32,12 @@ th, td {
 	padding: 10px;
 }
 
+td.collected {
+	color: var(--emph);
+	text-decoration: line-through;
+}
+
+
 
 div.topbar {
 	background: linear-gradient(var(--bground),var(--bglass));
