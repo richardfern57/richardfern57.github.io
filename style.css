@@ -115,7 +115,7 @@ div.header {
 	overflow: auto;
 	background: var(--bfont);
 	color: var(--bground);
-	width: 600px;
+	width: 650px;
 	margin: 70px auto;
 	margin-bottom: -20px;
 	padding: 30px;
@@ -161,4 +161,14 @@ div.section h2 {
 
 div.section h3 {
 	margin: 5px;
+}
+
+
+div.circle {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	overflow: hidden;
+	text-align: center;
+	box-shadow: 0 0 8px;
 }
