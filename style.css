@@ -52,6 +52,7 @@ div.topbar {
 
 
 div.topbar a:link {
+	width: 100px;
 	color: var(--bfont);
 	text-decoration: none;
 }
