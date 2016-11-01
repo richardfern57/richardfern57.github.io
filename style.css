@@ -75,7 +75,7 @@ div.topbar a.other:visited {
 div.topbar a.other:hover {
 	margin: 15px;
 	background-color: var(--emph);
-	border-radius: 15px;
+	border-radius: 15px 15px 15px 15px;
 	padding: 5px;
 }
 
@@ -83,7 +83,7 @@ div.topbar a.other:hover {
 
 div.topbar a.current:link {
 	margin: 15px;
-	border-radius: 15px;
+	border-radius: 15px 15px 15px 15px;
 	padding: 5px;
 	background-color: var(--emph);
 	color: var(--bfont);
