@@ -70,6 +70,7 @@ div.topbar a.other:link {
 	background-color: var(--trans);
 	border-radius: 15px 15px 15px 15px;
 	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
 	padding: 5px;
 	color: var(--bfont);
 	text-decoration: none;
@@ -82,6 +83,7 @@ div.topbar a.other:hover {
 	background-color: var(--emph);
 	border-radius: 15px 15px 15px 15px;
 	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
 	padding: 5px;
 }
 
@@ -92,6 +94,7 @@ div.topbar a.current:link {
 	background-color: var(--emph);
 	border-radius: 15px 15px 15px 15px;
 	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
 	padding: 5px;
 	color: var(--bfont);
 	text-decoration: none;
