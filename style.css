@@ -146,7 +146,7 @@ div.header a:hover {
 div.section {
 	background: var(--bglass);
 	color: var(--bfont);
-	width: 500px;
+	width: 550px;
 	margin: 50px auto;
 	padding: 50px;
 	box-shadow: -5px 5px var(--emph);
