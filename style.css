@@ -2,6 +2,7 @@
 	--bfont: rgba(255,255,255,1);
 	--bground: rgba(0,33,71,1);
 	--bglass: rgba(0,33,71,0.9);
+	--opaqueglass: rgba(0,51,91,1);
 	--trans: rgba(0,0,0,0);
 	--emph: rgba(127,144,163,1);
 	--shad: orange;
@@ -144,7 +145,7 @@ div.header a:hover {
 
 
 div.section {
-	background: var(--bglass);
+	background: var(--opaqueglass);
 	color: var(--bfont);
 	width: 550px;
 	margin: 50px auto;
@@ -181,4 +182,21 @@ div.circle {
 	overflow: hidden;
 	text-align: center;
 	box-shadow: 0 0 8px;
+}
+
+div.dropdown {
+	display: inline-block;
+}
+
+div.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--opaqueglass);
+	width: 150px;
+	box-shadow: 0 0 8px;
+	padding: 20px;
+}
+
+div.dropdown:hover div.dropdown-content {
+	display: block;
 }
