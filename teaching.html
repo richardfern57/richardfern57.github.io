@@ -14,6 +14,14 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
 		<title>Richard Fern</title>
+
+		<script>
+			function toggle(id) {
+				var row = document.getElementById(id);
+				if(row.style.display == "none") {row.style.display = "table-row";}
+				else {row.style.display = "none";}
+			}
+		</script>
 	</head>
 
 	<body>
@@ -38,6 +46,9 @@
 					<th>Details</th>
 					<th>Links</th>
 				</tr>
+
+
+
 				<tr>
 					<td>Fri 3<sup>rd</sup> Feb<br>(3<sup>rd</sup> wk)</td>
 					<td>16:15 - 18:30</td>
@@ -46,27 +57,34 @@
 					<td>Sun 5<sup>th</sup> Feb 6am</td>
 					<td><a href="CMPPS1-4.pdf" target="_blank">Problem Set 1</a></td>
 				</tr>
+
+
+
 				<tr>
 					<td>Wed 8<sup>th</sup> Feb<br>(4<sup>th</sup> wk)</td>
 					<td>16:15 onwards</td>
 					<td>David Harvey Room</td>
 					<td>Tutorials</td>
 					<td></td>
-					<td><div class="dropdown">
-						<span>Schedule</span>
-						<div class="dropdown-content" align="left">
-							<ul style="list-style-type:none;padding:0;margin:0">
-								<li>16:15 - </li>
-								<li>16:45 - </li>
-								<li>17:15 - </li>
-								<li>17:45 - </li>
-								<li>18:15 - </li>
-								<li>18:45 - </li>
-								<li>19:15 - </li>
-							</ul>
-						</div>
-					</div></td>
+					<td><button type="button" onclick="toggle('tutes1')">
+						Schedule</button></td>
 				</tr>
+				<tr id="tutes1" style="display:none;">
+					<td colspan=2></td><td colspan=2 align="left">
+						<ul style="list-style-type:none;padding:0;margin:0">
+							<li>16:15 - </li>
+							<li>16:45 - </li>
+							<li>17:15 - </li>
+							<li>17:45 - </li>
+							<li>18:15 - </li>
+							<li>18:45 - </li>
+							<li>19:15 - </li>
+						</ul>
+					</td><td colspan=2></td>
+				</tr>
+
+
+
 				<tr>
 					<td>Wed 15<sup>th</sup> Feb<br>(5<sup>th</sup> wk)</td>
 					<td>16:15 - 18:30</td>
@@ -75,27 +93,34 @@
 					<td>Fri 17<sup>th</sup> Feb 6pm</td>
 					<td><a href="CMPPS1-4.pdf" target="_blank">Problem Set 2</a></td>
 				</tr>
+
+
+
 				<tr>
 					<td>Wed 22<sup>nd</sup> Feb<br>(6<sup>th</sup> wk)</td>
 					<td>16:15 onwards</td>
 					<td>David Harvey Room</td>
 					<td>Tutorials</td>
 					<td></td>
-					<td><div class="dropdown">
-						<span>Schedule</span>
-						<div class="dropdown-content" align="left">
-							<ul style="list-style-type:none;padding:0;margin:0">
-								<li>16:15 - </li>
-								<li>16:45 - </li>
-								<li>17:15 - </li>
-								<li>17:45 - </li>
-								<li>18:15 - </li>
-								<li>18:45 - </li>
-								<li>19:15 - </li>
-							</ul>
-						</div>
-					</div></td>
+					<td><button type="button" onclick="toggle('tutes2')">
+						Schedule</button></td>
 				</tr>
+				<tr id="tutes2" style="display:none;">
+					<td colspan=2></td><td colspan=2 align="left">
+						<ul style="list-style-type:none;padding:0;margin:0">
+							<li>16:15 - </li>
+							<li>16:45 - </li>
+							<li>17:15 - </li>
+							<li>17:45 - </li>
+							<li>18:15 - </li>
+							<li>18:45 - </li>
+							<li>19:15 - </li>
+						</ul>
+					</td><td colspan=2></td>
+				</tr>
+
+
+
 				<tr>
 					<td>Wed 1<sup>st</sup> Mar<br>(7<sup>th</sup> wk)</td>
 					<td>16:15 - 18:30</td>
@@ -104,6 +129,9 @@
 					<td>Fri 3<sup>rd</sup> Mar 6pm</td>
 					<td><a href="CMPPS1-4.pdf" target="_blank">Problem Set 3</a></td>
 				</tr>
+
+
+
 				<tr>
 					<td>Mon 6<sup>th</sup> Mar<br>(8<sup>th</sup> wk)</td>
 					<td>16:30 - 18:30</td>
@@ -112,26 +140,30 @@
 					<td>Trinity Term</td>
 					<td><a href="CMPPS1-4.pdf" target="_blank">Vacation Problems</a></td>
 				</tr>
+
+
+
 				<tr>
 					<td>Tue 7<sup>th</sup> Mar<br>(8<sup>th</sup> wk)</td>
 					<td>16:15 onwards</td>
 					<td>David Harvey Room</td>
 					<td>Tutorials</td>
 					<td></td>
-					<td><div class="dropdown">
-						<span>Schedule</span>
-						<div class="dropdown-content" align="left">
-							<ul style="list-style-type:none;padding:0;margin:0">
-								<li>16:15 - </li>
-								<li>16:45 - </li>
-								<li>17:15 - </li>
-								<li>17:45 - </li>
-								<li>18:15 - </li>
-								<li>18:45 - </li>
-								<li>19:15 - </li>
-							</ul>
-						</div>
-					</div></td>
+					<td><button type="button" onclick="toggle('tutes3')">
+						Schedule</button></td>
+				</tr>
+				<tr id="tutes3" style="display:none;">
+					<td colspan=2></td><td colspan=2 align="left">
+						<ul style="list-style-type:none;padding:0;margin:0">
+							<li>16:15 - </li>
+							<li>16:45 - </li>
+							<li>17:15 - </li>
+							<li>17:45 - </li>
+							<li>18:15 - </li>
+							<li>18:45 - </li>
+							<li>19:15 - </li>
+						</ul>
+					</td><td colspan=2></td>
 				</tr>
 			</table>
 			<p>
@@ -142,38 +174,10 @@
 			</p>
 		</div>
 
-		<div class="section">
-			<h2>Flows, Fluids and Complexity (HT 2017)</h2>
-			<table>
-				<tr>
-					<th>Date</th>
-					<th>Time</th>
-					<th>Location</th>
-					<th>Event</th>
-					<th>Deadline</th>
-					<th>Links</th>
-				</tr>
-				<tr>
-					<td>Tue 17<sup>th</sup> Jan</td>
-					<td>14:00 - 16:00</td>
-					<td>David Harvey Room</td>
-					<td>Collection Class</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Tue 17<sup>th</sup> Jan</td>
-					<td>16:00 onwards</td>
-					<td>David Harvey Room</td>
-					<td>Tutorials</td>
-					<td></td>
-					<td></td>
-				</tr>
-			</table>
-		</div>
+
 
 		<div class="section">
-			<h2>Quantum Mechanics (MT 2016)</h2>
+			<h2>Quantum Mechanics</h2>
 			<table>
 				<tr>
 					<td></td>
@@ -190,23 +194,25 @@
 				</tr>
 			</table>
 			<p>
-				Furthermore, <a href="Canon.pdf">here</a> are some short notes on
-				deriving quantum mechanics in the Canonical quantisation formalism.
+				<a href="Canon.pdf">Furthermore, here are some short notes on
+				deriving quantum mechanics in the Canonical quantisation formalism.</a>
 		</div>
 
+
+
 		<div class="section">
-			<h2>Fluid Dynamics (MT 2016)</h2>
+			<h2>Flows, Fluids and Complexity</h2>
 			<table>
 				<tr>
 					<td><a href="FlowsPS1.pdf" target="_blank">Problem Set 1
 						</a></td>
-					<td><a href="FlowsSol1.pdf" target="_blank">Solutions
+					<td><a href="FlowsSol1.pdf" target="_blank">Solutions 1
 						</a></td>
 				</tr>
 				<tr>
 					<td><a href="FlowsPS2.pdf" target="_blank">Problem Set 2
 						</a></td>
-					<td><a href="FlowsSol2.pdf" target="_blank">Solutions
+					<td><a href="FlowsSol2.pdf" target="_blank">Solutions 2
 						</a></td>
 				</tr>
 			</table>

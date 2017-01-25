@@ -184,19 +184,15 @@ div.circle {
 	box-shadow: 0 0 8px;
 }
 
-div.dropdown {
-	display: inline-block;
+button {
+	background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
 }
 
-div.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: var(--opaqueglass);
-	width: 150px;
-	box-shadow: 0 0 8px;
-	padding: 20px;
-}
-
-div.dropdown:hover div.dropdown-content {
-	display: block;
+button:hover {
+	color: var(--emph);
 }
