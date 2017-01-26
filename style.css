@@ -34,10 +34,7 @@ th, td {
 	padding: 10px;
 }
 
-td.collected {
-	color: var(--emph);
-	text-decoration: line-through;
-}
+
 
 
 
@@ -184,15 +181,16 @@ div.circle {
 	box-shadow: 0 0 8px;
 }
 
-button {
-	background: none;
-	border: none;
-	padding: 0;
-	font: inherit;
-	color: inherit;
+tr.collapsible:hover {
 	cursor: pointer;
 }
 
-button:hover {
-	color: var(--emph);
+tr.hiddenrow {
+	display:none;
 }
+
+table.hiddentable td {
+	border-color: var(--opaqueglass);
+	padding: 0px;
+}
+
