@@ -189,8 +189,12 @@ tr.hiddenrow {
 	display: none;
 }
 
+table.hiddentable {
+	border-spacing: 10px;
+}
+
 table.hiddentable td {
 	border-color: var(--opaqueglass);
-	padding: 0px;
+	padding: 2px;
 }
 
