@@ -181,12 +181,18 @@ div.circle {
 	box-shadow: 0 0 8px;
 }
 
+
+
 tr.collapsible:hover {
 	cursor: pointer;
 }
 
 tr.hiddenrow {
-	display: none;
+	padding: 0px;
+}
+
+tr.hiddenrow td {
+	padding: 0px;
 }
 
 table.hiddentable {
@@ -196,5 +202,11 @@ table.hiddentable {
 table.hiddentable td {
 	border-color: var(--opaqueglass);
 	padding: 2px;
+}
+
+div.hiddendiv {
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
 
