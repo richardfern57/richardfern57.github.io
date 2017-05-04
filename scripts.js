@@ -13,3 +13,12 @@ function toggle(id) {
 	}
 }
 
+
+$(window).scroll(function() {
+	var h = $(window).scrollTop();
+	if(h==0) {
+		$(".topbar").css({'padding':'30px'})
+	} else {
+		$(".topbar").css({'padding':'15px 30px 15px 30px'})
+	}
+});
